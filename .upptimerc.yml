@@ -1,8 +1,8 @@
-owner: ваш-github-username
-repo: ваш-репозиторий
+owner: Phirdorri
+repo: tlg-bot-monitor
 sites:
   - name: Telegram Bot Webhook
-    url: https://ваш-бот.onrender.com/webhook
+    url: https://lite-tg-shop-bot.onrender.com/webhook
     method: POST
     interval: 5
     headers:
@@ -12,7 +12,7 @@ sites:
     timeout: 30000
 
   - name: Telegram Bot Root
-    url: https://ваш-бот.onrender.com
+    url: https://lite-tg-shop-bot.onrender.com
     method: GET
     interval: 5
     headers:
@@ -22,4 +22,4 @@ sites:
     timeout: 30000
 
 status-website:
-  baseUrl: /ваш-репозиторий
+  baseUrl: /tlg-bot-monitor
