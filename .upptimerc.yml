@@ -2,7 +2,7 @@
 owner: "Phirdorri"  # Обязательно в двойных кавычках
 repo: "tlg-bot-monitor"   # Обязательно в двойных кавычках
 branches:
-  - "main"                     # Указание ветки в кавычках
+  - "master"                     # Указание ветки в кавычках
 
 sites:
   - name: "Telegram Bot Webhook"
