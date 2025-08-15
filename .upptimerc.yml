@@ -17,17 +17,6 @@ sites:
       - 201
     maxResponseTime: 30000     # Таймаут в миллисекундах (число без кавычек)
 
-  - name: "Telegram Bot Root"
-    url: "https://lite-tg-shop-bot.onrender.com"  # URL в кавычках
-    method: "GET"              # Метод в кавычках
-    interval: 5                # Интервал в минутах (число без кавычек)
-    headers:                   # Правильный формат заголовков
-      - key: "User-Agent"
-        value: "Upptime/1.0"
-    expectedStatusCodes:       # Используем новый формат статусов
-      - 200
-    maxResponseTime: 30000     # Таймаут в миллисекундах (число без кавычек)
-
 status-website:
   baseUrl: "/tlg-bot-monitor"  # Путь в кавычках
   cname: ""                         # Оставить пустым
