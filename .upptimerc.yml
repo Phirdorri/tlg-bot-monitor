@@ -8,24 +8,24 @@ sites:
   - name: "Telegram Bot Webhook"
     url: "https://lite-tg-shop-bot.onrender.com/webhook"  # URL в кавычках
     method: "POST"             # Метод в кавычках
-    interval: 5                # Интервал в минутах (число без кавычек)
+    interval: "5"                # Интервал в минутах (число без кавычек)
     headers:                   # Правильный формат заголовков
       - key: "User-Agent"
         value: "Upptime/1.0"
     expectedStatusCodes:       # Используем новый формат статусов
       - 200
       - 201
-    maxResponseTime: 30000     # Таймаут в миллисекундах (число без кавычек)
+    maxResponseTime: "30000"     # Таймаут в миллисекундах (число без кавычек)
   - name: "Telegram Bot Root"
     url: "https://lite-tg-shop-bot.onrender.com"
     method: "GET"
-    interval: 5
+    interval: "5"
     headers:
       - key: "User-Agent"
         value: "Upptime/1.0"
     expectedStatusCodes:
       - 200
-    maxResponseTime: 30000
+    maxResponseTime: "30000"
 
 status-website:
   baseUrl: "/tlg-bot-monitor"  # Путь в кавычках
