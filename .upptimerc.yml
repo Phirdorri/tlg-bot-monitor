@@ -1,25 +1,33 @@
-owner: "Phirdorri"  # Обязательно в кавычках!
-repo: "tlg-bot-monitor"         # Обязательно в кавычках!
+# Рабочий конфиг для Upptime без ошибок
+owner: "Phirdorri"  # Обязательно в двойных кавычках
+repo: "tlg-bot-monitor"   # Обязательно в двойных кавычках
+branches:
+  - "main"                     # Указание ветки в кавычках
+
 sites:
   - name: "Telegram Bot Webhook"
-    url: "https://lite-tg-shop-bot.onrender.com/webhook"
-    method: "POST"
-    interval: 5
-    headers:
+    url: "https://lite-tg-shop-bot.onrender.com/webhook"  # URL в кавычках
+    method: "POST"             # Метод в кавычках
+    interval: 5                # Интервал в минутах (число без кавычек)
+    headers:                   # Правильный формат заголовков
       - key: "User-Agent"
         value: "Upptime/1.0"
-    expectStatus: 200
-    timeout: 30
-    
+    expectedStatusCodes:       # Используем новый формат статусов
+      - 200
+      - 201
+    maxResponseTime: 30000     # Таймаут в миллисекундах (число без кавычек)
+
   - name: "Telegram Bot Root"
-    url: "https://lite-tg-shop-bot.onrender.com"
-    method: "GET"
-    interval: 5
-    headers:
+    url: "https://lite-tg-shop-bot.onrender.com"  # URL в кавычках
+    method: "GET"              # Метод в кавычках
+    interval: 5                # Интервал в минутах (число без кавычек)
+    headers:                   # Правильный формат заголовков
       - key: "User-Agent"
         value: "Upptime/1.0"
-    expectStatus: 200
-    timeout: 30
+    expectedStatusCodes:       # Используем новый формат статусов
+      - 200
+    maxResponseTime: 30000     # Таймаут в миллисекундах (число без кавычек)
 
 status-website:
-  baseUrl: "/tlg-bot-monitor"  # Обязательно в кавычках!
+  baseUrl: "/tlg-bot-monitor"  # Путь в кавычках
+  cname: ""                         # Оставить пустым
