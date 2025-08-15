@@ -1,15 +1,25 @@
-owner: Phirdorri  # Например, ivan-petrov
-repo: tlg-bot-monitor       # Например, telegram-bot-monitor
+owner: ваш-github-username
+repo: ваш-репозиторий
 sites:
   - name: Telegram Bot Webhook
-    url: https://lite-tg-shop-bot.onrender.com/webhook
-    method: POST             # Критично для Render!
-    interval: 5              # Проверка каждые 5 минут
+    url: https://ваш-бот.onrender.com/webhook
+    method: POST
+    interval: 5
+    headers:
+      - key: User-Agent
+        value: Upptime/1.0
+    expectStatus: 200
+    timeout: 30000
+
   - name: Telegram Bot Root
-    url: https://lite-tg-shop-bot.onrender.com
+    url: https://ваш-бот.onrender.com
     method: GET
     interval: 5
     headers:
-      User-Agent: Upptime/1.0
+      - key: User-Agent
+        value: Upptime/1.0
+    expectStatus: 200
+    timeout: 30000
+
 status-website:
-  baseUrl: /tlg-bot-monitor  # Например, /telegram-bot-monitor
+  baseUrl: /ваш-репозиторий
