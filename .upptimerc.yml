@@ -1,25 +1,25 @@
-owner: Phirdorri
-repo: tlg-bot-monitor
+owner: "Phirdorri"  # Обязательно в кавычках!
+repo: "tlg-bot-monitor"         # Обязательно в кавычках!
 sites:
-  - name: Telegram Bot Webhook
-    url: https://lite-tg-shop-bot.onrender.com/webhook
-    method: POST
+  - name: "Telegram Bot Webhook"
+    url: "https://lite-tg-shop-bot.onrender.com/webhook"
+    method: "POST"
     interval: 5
     headers:
-      - key: User-Agent
-        value: Upptime/1.0
+      - key: "User-Agent"
+        value: "Upptime/1.0"
     expectStatus: 200
-    timeout: 30000
-
-  - name: Telegram Bot Root
-    url: https://lite-tg-shop-bot.onrender.com
-    method: GET
+    timeout: 30
+    
+  - name: "Telegram Bot Root"
+    url: "https://lite-tg-shop-bot.onrender.com"
+    method: "GET"
     interval: 5
     headers:
-      - key: User-Agent
-        value: Upptime/1.0
+      - key: "User-Agent"
+        value: "Upptime/1.0"
     expectStatus: 200
-    timeout: 30000
+    timeout: 30
 
 status-website:
-  baseUrl: /tlg-bot-monitor
+  baseUrl: "/tlg-bot-monitor"  # Обязательно в кавычках!
