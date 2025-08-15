@@ -5,5 +5,11 @@ sites:
     url: https://lite-tg-shop-bot.onrender.com/webhook
     method: POST             # Критично для Render!
     interval: 5              # Проверка каждые 5 минут
+  - name: Telegram Bot Root
+    url: https://lite-tg-shop-bot.onrender.com
+    method: GET
+    interval: 5
+    headers:
+      User-Agent: Upptime/1.0
 status-website:
   baseUrl: /tlg-bot-monitor  # Например, /telegram-bot-monitor
